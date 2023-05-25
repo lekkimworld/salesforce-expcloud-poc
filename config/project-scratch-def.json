@@ -1,0 +1,22 @@
+{
+  "orgName": "salesforce-cms-poc",
+  "edition": "Enterprise",
+  "release": "preview",
+  "features": ["PersonAccounts", "Communities", "EnableSetPasswordInApi", "SalesforceIdentityForCommunities", "Sites", "ExternalIdentityLogin"],
+  "language": "en_US",
+  "country": "US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "languageSettings":{
+      "enableTranslationWorkbench": true
+    }
+  }
+}
