@@ -1,10 +1,10 @@
 <template>
-    <lightning-card title="Partnership Agreements">
+    <lightning-card title="Partnership Agreements (Apex)">
         <div class="slds-m-around_small">
             <template if:false={agreements}>Loading...</template>
             <template if:true={errors}>{errors}</template>
             <template if:true={agreements}>
-                <ul onclick={handleOnClick}>
+                <ul>
                 <template for:each={agreements} for:item="agreement">
                     <li key={agreement.Id}>{agreement.Name} (active from <lightning-formatted-date-time value={agreement.Start_Date__c}></lightning-formatted-date-time> to <lightning-formatted-date-time value={agreement.End_Date__c}></lightning-formatted-date-time>)</li>
                 </template>
