@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Partnership Agreements">
+        <div class="slds-m-around_small">
+            <template if:false={agreements}>Loading...</template>
+            <template if:true={errors}>{errors}</template>
+            <template if:true={agreements}>
+                <ul onclick={handleOnClick}>
+                <template for:each={agreements} for:item="agreement">
+                    <li key={agreement.Id}><a href="javascript:void(0)" data-id={agreement.Id} data-type="Partnership_Agreement__c">{agreement.Name.value}</a>, {agreement.Start_Date__c.value}, {agreement.End_Date__c.value}, <a href="javascript:void(0)" data-id={agreement.Account__r.Id} data-type="Account">{agreement.Account__r.Name.value}</a></li>
+                </template>
+                </ul>
+            </template>
+        </div>
+    </lightning-card>
+</template>

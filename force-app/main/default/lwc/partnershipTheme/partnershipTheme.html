@@ -1,0 +1,10 @@
+<template>
+    <div class="container">
+        <template if:true={showBanner}>
+            <c-partner-banner></c-partner-banner>
+        </template>
+        <div class="slot-container">
+            <slot></slot>
+        </div>
+    </div>
+</template>

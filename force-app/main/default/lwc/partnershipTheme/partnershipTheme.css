@@ -1,0 +1,12 @@
+.container {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.slot-container {
+    border: 2px dotted black;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}

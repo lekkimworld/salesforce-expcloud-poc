@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Partnership Theme</masterLabel>
+
+    <targets>
+        <target>lightningCommunity__Theme_Layout</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property label="Show banner" name="showBanner" type="Boolean" default="false" />
+            <property label="Start Color" name="startColor" type="Color" default="rgba(2,0,36,1)" />
+            <property label="Middle Color" name="middleColor" type="Color" default="rgba(9,76,121,0.6)" />
+            <property label="End Color" name="endColor" type="Color" default="rgba(0,212,255,1)" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

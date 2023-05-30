@@ -1,0 +1,58 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"7fab13da-d6ce-4036-aa0a-e2dc871cbcdc\",\"columns\":[{\"UUID\":\"ad7b1649-4e82-44f6-8760-55f96c56899f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:listPartnershipAgreementsExpCloud",
+              "id" : "1bc87f4b-9898-4a9d-9b81-80868325d594",
+              "type" : "component"
+            } ],
+            "id" : "ad7b1649-4e82-44f6-8760-55f96c56899f",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "7fab13da-d6ce-4036-aa0a-e2dc871cbcdc",
+          "type" : "component"
+        } ],
+        "id" : "e01265fc-5328-41e4-9bf1-6137b23add5f",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "4ea63352-3fff-4aa4-baf9-70b0acf8927a",
+          "type" : "component"
+        } ],
+        "id" : "4ef39d41-03fd-4aba-8518-dbe6add3d914",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "f6ef7ff5-e637-4afd-8f96-0891b7fc55cd",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "k7dfec769wBeLP4AkGnkhaKwOsk32j",
+    "viewType" : "home"
+  }
+}
