@@ -24,7 +24,7 @@ u.TimeZoneSidKey = timezone;
 insert u;
 
 PermissionSet ps1 = [SELECT Id FROM PermissionSet WHERE Name='API_Only' LIMIT 1];
-PermissionSet ps2 = [SELECT Id FROM PermissionSet WHERE Name='Parnership_Agreements' LIMIT 1];
+PermissionSet ps2 = [SELECT Id FROM PermissionSet WHERE Name='Partnership_Agreements_ViewAll' LIMIT 1];
 PermissionSetAssignment psa1 = new PermissionSetAssignment(PermissionSetId = ps1.Id, AssigneeId = u.Id);
 PermissionSetAssignment psa2 = new PermissionSetAssignment(PermissionSetId = ps2.Id, AssigneeId = u.Id);
 insert psa1;

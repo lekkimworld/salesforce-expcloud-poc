@@ -1,5 +1,5 @@
 {
-  "orgName": "salesforce-cms-poc",
+  "orgName": "salesforce-expcloud-poc",
   "edition": "Enterprise",
   "release": "preview",
   "features": ["PersonAccounts", "Communities", "EnableSetPasswordInApi", "SalesforceIdentityForCommunities", "Sites", "ExternalIdentityLogin"],

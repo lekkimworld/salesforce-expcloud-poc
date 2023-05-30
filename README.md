@@ -1,19 +1,19 @@
-# Salesforce DX Project: Next Steps
+# Salesforce Experience Cloud PoC
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Salesforce project to create an org and deploy a bunch of capabilities to it such as an Experience Cloud site, some custom Lightning Web Components, a custom object, a sharing set for that object for Experience Cloud. There is also support for generating a couple of connected apps to interact with the org over the API.
 
-
-
-
+## Configure ##
 ```
 sfdx org create scratch --set-default -f config/project-scratch-def.json
 
 ORG_ID=`sfdx force:org:display --json | jq ".result.id" -r`
 SUFFIX=`echo $ORG_ID`
 rm -rf force-app/main/default/connectedApps
+rm *.crt
+rm *.key
 mkdir -p force-app/main/default/connectedApps
 
-sfdx force source deploy
+sfdx force source push
 
 ROLE_ID=`sfdx force:data:soql:query -q "select Id from UserRole where Name='Dummy'" --json | jq ".result.records[0].Id" -r`
 sfdx force data record update -s User -w "Name='User User'" -v "LanguageLocaleKey=en_US TimeZoneSidKey=Europe/Paris LocaleSidKey=da UserPermissionsInteractionUser=true UserPermissionsKnowledgeUser=true UserRoleId=$ROLE_ID"
@@ -52,4 +52,6 @@ echo $JWT_CLIENT_ID
 echo $JWT_CLIENT_SECRET
 
 sfdx force source deploy -m ConnectedApp
+
+sfdx community publish -n Partners
 ```
