@@ -1,0 +1,25 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRefFoo"
+            },
+            "Name": "Foo Inc."
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRefBar"
+            },
+            "Name": "Bar Inc."
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRefBaz"
+            },
+            "Name": "Baz Inc."
+        }
+    ]
+}

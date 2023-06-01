@@ -1,0 +1,40 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Partnership_Agreement__c",
+                "referenceId": "Partnership_Agreement__cRef1"
+            },
+            "Start_Date__c": "2023-05-01",
+            "End_Date__c": "2023-12-31",
+            "Account__c": "@AccountRefFoo"
+        },
+        {
+            "attributes": {
+                "type": "Partnership_Agreement__c",
+                "referenceId": "Partnership_Agreement__cRef2"
+            },
+            "Start_Date__c": "2023-01-01",
+            "End_Date__c": "2023-04-30",
+            "Account__c": "@AccountRefFoo"
+        },
+        {
+            "attributes": {
+                "type": "Partnership_Agreement__c",
+                "referenceId": "Partnership_Agreement__cRef3"
+            },
+            "Start_Date__c": "2023-01-01",
+            "End_Date__c": "2023-12-31",
+            "Account__c": "@AccountRefBar"
+        },
+        {
+            "attributes": {
+                "type": "Partnership_Agreement__c",
+                "referenceId": "Partnership_Agreement__cRef4"
+            },
+            "Start_Date__c": "2023-01-01",
+            "End_Date__c": "2023-04-30",
+            "Account__c": "@AccountRefBaz"
+        }
+    ]
+}

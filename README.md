@@ -54,4 +54,6 @@ echo $JWT_CLIENT_SECRET
 sfdx force source deploy -m ConnectedApp
 
 sfdx community publish -n Partners
+
+sfdx data tree import -p data/Account-Partnership_Agreement__c-plan.json
 ```
